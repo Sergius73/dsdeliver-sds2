@@ -1,5 +1,5 @@
-import ProductCard from "./ProductCard";
-import { Product } from "./Types"
+import ProductCard from './ProductCard';
+import { Product } from './Types';
 
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 }
 
 
-function ProductsList({ products }: Props){
+function ProductsList({ products }: Props) {
     return(
         <div className="orders-list-container">
             <div className="orders-list-items">

@@ -10,14 +10,14 @@ function formatPrice(price: number){
         currency: 'BRL',
         minimumFractionDigits: 2
     });
-
+    
         return formatter.format(price);
 }
 
 function ProductCard({ product}: Props){
     return(
         <div className="order-card-container">
-           <h3 className="order-card-titke">
+           <h3 className="order-card-title">
                {product.name}
            </h3> 
            <img src={product.imageUri}
