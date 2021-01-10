@@ -1,16 +1,16 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Order from "./Order";
-import Home from "./Home";
+import Orders from "./Orders";
 import Navbar from "./Navbar";
+import Home from "./Home";
 
 
-function Routers(){
+function Routes(){
     return(
         <BrowserRouter>
             <Navbar />
            <Switch>
                <Route path="/orders">
-                   <Order />
+                   <Orders />
                </Route>
                <Route path="/">
                     <Home />
@@ -20,4 +20,4 @@ function Routers(){
     )
 }
 
-export default Routers;
+export default Routes;
